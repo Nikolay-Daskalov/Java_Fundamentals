@@ -21,5 +21,6 @@ public class Main {
         }
 
         System.out.printf("The sum of even numbers is: %d.%n", sumEven);
+        System.out.printf("The sum of odd numbers is: %d.%n", sumOdd);
     }
 }
