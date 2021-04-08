@@ -19,10 +19,7 @@ public class Main {
         boolean ifAreEqual = true;
         int index = -1, sum = 0;
 
-        if (firstArray.length != secondArray.length) {
-            System.out.println("Enter equal size arrays next time!");
-            return;
-        }
+        if (ArraysNotEqual(firstArray, secondArray)) return;
 
         for (int i = 0; i < firstArray.length; i++) {
             if (firstArray[i] != secondArray[i]) {
@@ -39,5 +36,13 @@ public class Main {
         } else {
             System.out.printf("Arrays are not identical. Found difference at %d index.%n", index);
         }
+    }
+
+    private static boolean ArraysNotEqual(int[] firstArray, int[] secondArray) {
+        if (firstArray.length != secondArray.length) {
+            System.out.println("Enter equal size arrays next time!");
+            return true;
+        }
+        return false;
     }
 }
