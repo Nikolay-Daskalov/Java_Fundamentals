@@ -1,9 +1,9 @@
 public class Student {
 
-    String firstName;
-    String lastName;
-    int age;
-    String hometown;
+    private String firstName;
+    private String lastName;
+    private int age;
+    private String hometown;
 
     public Student(String firstName, String lastName, int age, String hometown) {
         this.firstName = firstName;
